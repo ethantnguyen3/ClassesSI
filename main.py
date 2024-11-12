@@ -24,7 +24,6 @@ class PetData(AnimalData):
     def set_id(self, pet_id):
         self.id_num = pet_id
 
-    # FIXME: Add print_all() member method
     def print_all(self):
         AnimalData.print_all(self)
         print(f'ID: {self.id_num}')
@@ -39,3 +38,4 @@ animal = AnimalData()
 animal.set_name('Raven')
 animal.set_age(12)  
 animal.set_id(1327)
+animal.print_all()
